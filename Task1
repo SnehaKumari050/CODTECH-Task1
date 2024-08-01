@@ -1,0 +1,85 @@
+#include<stdio.h>
+
+int main(){
+    int score=0;
+    int answer;
+
+    //Question 1
+    printf("Question 1: In which country the 2024 Olympics will be held?\n");
+    printf("1.France\n");
+    printf("2.USA\n");
+    printf("3.India\n");
+    printf("Bulgaria\n");
+    printf("your answer:");
+    scanf("%d",&answer);
+
+    if (answer==1){
+        printf("Correct!\n");
+        score++;
+    }else{
+        printf("Wrong!The correct answer is 1.France\n");
+    }
+
+    //Question 2
+    printf("Question 2: Who brought bronze medal to India from Women's 10m Air Pistol Shooting at Paris OlympicS?\n");
+    printf("1.Esha Singh\n");
+    printf("2.Manu Bhaker\n");
+    printf("3.Palak Gulia\n");
+    printf("4.Anushka Patil \n");
+    printf("your answer:");
+    scanf("%d",&answer);
+    if(answer==2){
+        printf("Correct!\n");
+        score++;
+    }else{
+        printf("Wrong! The correct answer is 2.Manu Bhaker\n");
+    }
+
+    //Quwstion 3
+    printf("Question 3: Who is first woman Indian shooter to win Olympic medal?\n");
+    printf("1.Esha Singh\n");
+    printf("2.Manu Bhaker\n");
+    printf("3.Palak Gulia\n");
+    printf("4.Anushka Patil \n");
+    printf("your answer:");
+    scanf("%d",&answer);
+    if(answer==2){
+        printf("Correct!\n");
+        score++;
+    }else{
+        printf("Wrong! The correct answer is 2.Manu Bhaker\n");
+    }
+
+    //Question 4
+    printf("Qestion 4:Who was the first Indian to win multiple medals in single Olympic?\n");
+    printf("1.Neeraj Chopra\n");
+    printf("2.Manu Bhaker\n");
+    printf("3. Norman Pritchard\n");
+    printf("4.PV Sindhu \n");
+    printf("your answer:");
+    scanf("%d",&answer);
+    if(answer==3){
+        printf("Correct!\n");
+        score++;
+    }else{
+        printf("Wrong! The correct answer is 3.Norman Pritchard\n");
+    }
+
+    //Final Score
+    printf("Your final score is:%d\n" ,score);
+
+    //Feedback
+    if (score==4){
+        printf("Excellent!!!  You got all answers Correct.\n");
+    }else if(score=3){
+        printf("Well Done!  You got 3 out of 4 correct.\n");
+    }else if(score==2){
+        printf("Good!  You got 2 out of 4 correct.\n");
+    }else if (score==1){
+        printf("You got only 1 out of 4 correct.Better luck next time!\n");
+    }else {
+        printf("You got all answers wrong.Try again!\n");
+    }
+
+    return 0;
+}
